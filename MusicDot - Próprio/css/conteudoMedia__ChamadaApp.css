@@ -1,0 +1,120 @@
+.Conjunto__chamadaApp{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: orangered;
+}
+
+.ChamadaApp__celular{
+    width: 15rem;
+    height: 30rem;
+    margin: 0 3rem 0 auto;
+}
+
+.ChamadaApp__conteúdo{
+    width: 40%;
+    margin: 0 auto 0 3rem;
+}
+
+.ChamadaApp__titulo, .ChamadaApp__texto, .ChamadaApp__botoes{
+    font-size: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ChamadaApp__texto{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.ChamadaApp__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ChamadaApp__botao{
+    display: inline-flex;
+    width: 40%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: white;
+    color: orangered;
+    padding: .5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ChamadaApp__icone{
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 1000px){
+    .ChamadaApp__celular{
+        width: 10rem;
+        height: 20rem;
+    }
+
+    .ChamadaApp__titulo{
+        font-size: 1.5rem;
+    }
+    
+    .ChamadaApp__texto{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .ChamadaApp__botao{
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 800px){
+    .ChamadaApp__celular{
+        display: none;
+    }
+
+    .ChamadaApp__conteúdo{
+        width: inherit;
+    }
+
+    .ChamadaApp__titulo{
+        margin-top: 2rem;
+    }
+
+    .ChamadaApp__botoes{
+        margin-bottom: 3rem;
+        justify-content: space-around;
+    }
+
+    .ChamadaApp__botao{
+        width: 5rem;
+    }
+}
+
+/*
+        <section class="Conjunto__chamadaApp">
+            <img class="ChamadaApp__celular" src="conteúdo/mockup-app.png" alt="">
+            <div class="ChamadaApp__conteúdo">
+                <h2 class="ChamadaApp__titulo titulo__destaque">Estude em qualquer lugar com o App</h2>
+                <p class="ChamadaApp__texto">Com o aplicativo da MusicDot você baixa as aulas para estudar offline e fazer os exercícios. Disponível para Android e iOS. Já é aluno? <strong class="titulo__destaque">Baixe já:</strong></p>
+                <div class="ChamadaApp__botoes">
+                    <a class="ChamadaApp__android" href="">
+                        <img class="Android__icone" src="" alt="">
+                        Android
+                    </a>
+                    <a class="ChamadaApp__apple" href="">
+                        <img class="Apple__icone" src="" alt="">
+                        Apple
+                    </a>
+                </div>
+            </div>
+        </section>
+*/

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Conteudo">
+        <input type="color" name="Cor" id="CorPrincipal" value="#ffffff" oninput="mudarCorFundo(this)">
+        <p class="textoCor">Mude a cor acima para mudar a cor do fundo</p>
+        <P id="Caixa_content" onclick="trocarMensagem(this, 'Parabens 😁')" ondblclick="trocarMensagem(this, 'EU DISSE SÓ UMA VEZ!🤬🤬🤬')">Não me clique uma vez, somente duas vezes</p>
+        <section class="areaDosTextArea">
+            <textarea class="textoArea" name="texto" id="textoMouseMexer" cols="30" rows="10" readonly onmousemove="mudarCorFundoTexto(this ,'#0000ff')" onmouseout="mudarCorFundoTexto(this ,'#000000')">Mexe o mouse aqui</textarea>
+            <input id="botaoMouseMexer" type="button" value="Preto" onmousedown="mudarCorFundo2(this, '#000000')" onmouseup="mudarCorFundo2(this, '#ffffff')">
+            <textarea class="textoArea" name="" id="textoTriste" cols="30" rows="10" readonly>Por favor, clique no botão abaixo, ele está muito triste😥😥😥</textarea>
+            <button id="botaoTriste" onkeypress="aparecerMensagem('Obrigado por me clicar'), trocarMensagem('#textoTriste', 'Obrigado por clicar nele, parece estar muito melhor!'), trocarMensagem(this.id, '🙂')">😓</button>
+            <textarea class="textoArea" name="" id="textoCorNeutra" cols="30" rows="10" readonly onkeydown="mudarCorFundoTexto(this, '#ffffff'), trocarMensagem(this.id, 'Agora, large o botão para me deixar mais claro')" onkeyup="mudarCorFundoTexto(this, '#000000'), trocarMensagem(this.id, 'Pressione o botão C para poder me tornar escuro')">Pressione o botão 'C' para poder me tornar escuro</textarea>
+        </section>
+        <p id="naoMeFoque" onfocus="mudarCorFundo2(this, '#ff0000')" onblur="mudarCorFundo()">Se me focar, meu pai body ficará com raiva! 😡😡😡</p>
+        <input type="email" name="" id="naoMeMude" value="Não me mude" onchange="mudarCorFundo2(this, '#00ff00')">
+        <img id="imagemCarregar" src="Yippie.jpg" alt="" onload="aparecerMensagem('yippie')" onunload="trocarImagem(this), aparecerMensagem('holla molla')">
+        <input id="enviarFormulario" type="submit" value="mandar" onsubmit="aparecerMensagem('Formulário enviado com sucesso')">
+    </div>
+    <script src="teste.js"></script>
+</body>
+</html>

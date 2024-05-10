@@ -1,0 +1,132 @@
+.Conjunto__beneficios{
+    display: grid;
+    width: 100%;
+    height: 40rem;
+    grid-template-columns:  repeat(2, 30%);
+    grid-template-rows: 2rem repeat(2, 17rem);
+    grid-template-areas: "titulo titulo"
+                         "tudo nenhuma"
+                         "didatica estudar";
+    gap: 1rem;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+.Conjunto__beneficios--tituloPrincipal{
+    grid-area: titulo;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.Conjunto__beneficios > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: inherit;
+    background-color: rgb(238, 238, 238);
+    
+}
+
+.Conjunto__beneficios--tudoPraVoce{
+    grid-area: tudo;
+}
+
+.Conjunto__beneficios--nenhumaDuvida{
+    grid-area: nenhuma;
+}
+
+.Conjunto__beneficios--didaticaDuvidosa{
+    grid-area: didatica;
+}
+
+.Conjunto__beneficios--Online{
+    grid-area: estudar;
+}
+
+.Conjunto__beneficios--imagem{
+    margin-top: 1rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.Conjunto__beneficios--titulo{
+    font-size: 1.4rem;
+    margin: 1rem auto .5rem;
+}
+
+.Conjunto__beneficios--texto{
+    word-spacing: .2rem;
+}
+
+@media (max-width: 770px){
+    .Conjunto__beneficios{
+        grid-template-columns: 50%;
+        grid-template-rows: 2rem repeat(4, 12rem);
+        grid-template-areas: "titulo"
+                             "tudo" 
+                             "nenhuma" 
+                             "didatica" 
+                             "estudar";
+        height: 55rem;
+    }
+
+    .Conjunto__beneficios--imagem{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .Conjunto__beneficios--titulo{
+        font-size: 1rem;
+    }
+
+    .Conjunto__beneficios--texto{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 450px){
+    .Conjunto__beneficios{
+        grid-template-rows: 2rem repeat(4, 7rem);
+    }
+
+    .Conjunto__beneficios--imagem{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .Conjunto__beneficios--titulo{
+        font-size: .5rem;
+    }
+
+    .Conjunto__beneficios--texto{
+        font-size: .3rem;
+    }
+}
+
+/*
+        <section class="Conjunto__beneficios">
+            <h2 class="Conjunto__beneficios--titulo">Por que estudar na Musicdot</h2>
+            <div class="Conjunto__beneficios--tudoPraVoce">
+                <img class="Conjunto__beneficios--imagem" src="conteúdo/icone-beneficios-tudo-para-voce.svg" alt="">
+                <h3 class="Conjunto__beneficios--titulo titulo__destaque">Tudo para você realmente aprender</h3>
+                <p class="Conjunto__beneficios--texto">Você acessa todo o conteúdo! São aulas, exercícios, playbacks, cifras, partituras e tira dúvidas. 
+                   Estudem em qualquer lugar, qualquer dia, qualquer horário, ilimitado. Matricule-se já</p>
+            </div>
+            <div class="Conjunto__beneficios--nenhumaDuvida">
+                <img class="Conjunto__beneficios--imagem" src="conteúdo/icone-beneficios-nenhuma-duvida.svg" alt="">
+                <h3 class="Conjunto__beneficios--titulo titulo__destaque">Nenhuma dúvida sem resposta</h3>
+                <p class="Conjunto__beneficios--texto">Dúvidas são importantes para o seu aprendizado, e as dificuldades são normais. Na MusicDot você estuda com todo o suporte necessário. Além de todo conteúdo, você tira dúvidas.</p>
+            </div>
+            <div class="Conjunto__beneficios--didaticaDuvidosa">
+                <img class="Conjunto__beneficios--imagem" src="conteúdo/icone-beneficios-didatica-cuidadosa.svg" alt="">
+                <h3 class="Conjunto__beneficios--titulo titulo__destaque">Didática cuidadosa que te faz aprender</h3>
+                <p class="Conjunto__beneficios--texto">Saber tocar não quer dizer saber ensinar. Na MusicDot você encontra os dois! Nosso orgulho é justo o extremo cuidado didático que temo com as aulas. Investimos muito tempo.</p>
+            </div>
+            <div class="Conjunto__beneficios--Online">
+                <img class="Conjunto__beneficios--imagem" src="conteúdo/icone-beneficios-online.svg" alt="">
+                <h3 class="Conjunto__beneficios--titulo titulo__destaque">Estudar online é a melhor opção</h3>
+                <p class="Conjunto__beneficios--texto">Aprender em DVD e revistinha de banca são coisas do passado! Estudar com um professor particular é bom, mas quem é o seu professor? A MusicDot te oferece a melhor aula, a qualquer hora.</p>
+            </div>
+        </section>
+*/

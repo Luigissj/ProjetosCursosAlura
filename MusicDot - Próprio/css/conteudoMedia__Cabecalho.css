@@ -1,0 +1,183 @@
+html{
+    font-size: 16px;
+}
+
+.Cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(47,85,121,255);
+    width: 100%;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.Cabecalho__icone{
+    width: auto;
+}
+
+.Cabecalho__logotipo{
+    width: 5rem ;
+    padding: 1rem 0;
+}
+
+
+.Cabecalho__navegacao{
+    border-top: none;
+    background-color: transparent;
+    width: auto;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Cabecalho__lista{
+    display: inline-block;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.Cabecalho__lista--item{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2px;
+}
+
+@media (max-width: 318px) {    
+    .Cabecalho{
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .Cabecalho__icone{
+        margin: 0 auto;
+    }
+    
+    .Cabecalho__logotipo{
+        width: 9rem ;
+        padding: 1rem;
+    }
+    
+    
+    .Cabecalho__navegacao{
+        border-top: 3px solid #00000025;
+        background-color: rgba(146, 111, 22, 60%);
+        width: 100%;
+    }
+    
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    .Cabecalho__lista{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .Cabecalho__lista--item{
+        text-decoration: none;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: .6rem;
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+    .Cabecalho__lista--Matricular{
+        background-color: inherit;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 230px){
+    .Cabecalho__lista--item{
+        font-size: .4rem;
+    }
+
+    .Cabecalho__logotipo{
+        width: 5rem;
+    }
+}
+
+
+@media (max-width: 654px) and (min-width: 319px){    
+    .Cabecalho{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .Cabecalho__icone{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .Cabecalho__logotipo{
+        width: 7rem;
+        padding: 1rem;
+    }
+    
+    
+    .Cabecalho__navegacao{
+        border: none;
+        background-color: rgba(3, 7, 78, 0.40);
+        width: 80%;
+    }
+    
+    ul{
+        display: flex;
+        width: 100%;
+        padding: .5rem 0;
+    }
+    
+    .Cabecalho__lista{
+        list-style-type: none;
+        padding: .5rem;
+    }
+    
+    .Cabecalho__lista--item{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: .72rem;
+    }
+
+    .Cabecalho__lista--Matricular{
+        background-color: inherit;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 450px){
+    .Cabecalho__lista--item{
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .Cabecalho__logotipo{
+        width: 7rem;
+    }
+}    
+
+@media (min-width: 770px){
+    .Cabecalho__lista--Matricular{
+        margin-left: 1.42em;
+        border-radius: 6px;
+    }
+
+    .Cabecalho__lista--Matricular a{
+        padding: 1.8em 3.5em;
+    }
+}

@@ -1,0 +1,45 @@
+.header-navbar-logo{
+    width: 10rem;
+    margin-left: 3rem;
+}
+
+li{
+    color: white;
+    margin-left: 1rem;
+}
+
+.botao{
+    border: 2px solid rgb(80, 80, 80);
+}
+
+/*
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img class="header-navbar-logo" src="conteúdo/musicdot-logo-light.svg" alt=""></a>
+            <button class="navbar-brand" type="button" data-toogle="collapse" data-target="#Conteudo__navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mb-4">
+        <div class="jumbotron bg-dark text-light mt-3">
+            <div class="container">
+                <h1></h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+    </main>
+*/

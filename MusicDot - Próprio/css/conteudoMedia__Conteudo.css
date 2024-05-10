@@ -1,0 +1,178 @@
+.Conteudo__principal{
+    background-image: url("../conteúdo/home-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Conteudo__principal{
+    width: 100%;
+}
+
+.Conteudo__principal--conjunto-botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Conteudo__titulo--principal{
+    color: greenyellow;
+}
+
+.Conteudo__titulo--destaque{
+    color: aqua;
+}
+
+.Conteudo__principal--matricular{
+    display: none;
+}
+
+.Conteudo__principal--botoes{
+    display: grid;
+    grid-template-columns: repeat(6, 11rem);
+    grid-template-rows: 10rem 10rem;
+    grid-template-areas: "bateria teclado violao canto baixo percussao"
+                         "bateria audio teoria canto sopro cordas";
+    gap: .5rem;
+    margin: 3rem auto;
+}
+
+.Principal__Botão{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid rgb(22, 134, 168);
+    border-radius: 2%;
+}
+
+.Principal__Botão > img{
+    padding: 1.5rem;
+}
+
+.Botao__destaque > img{
+    height: 6rem;
+}
+
+.Botao__bateria{
+    grid-area: bateria;
+}
+
+.Botao__tecladoPiano{
+    grid-area: teclado;
+}
+
+.Botao__audio{
+    grid-area: audio;
+}
+
+.Botao__violaoGuitarra{
+    grid-area: violao;
+}
+
+.Botao__teoria{
+    grid-area: teoria;
+}
+
+.Botao__canto{
+    grid-area: canto;
+}
+
+.Botao__baixo{
+    grid-area: baixo;
+}
+
+.Botao__sopro{
+    grid-area: sopro;
+}
+
+.Botao__percussao{
+    grid-area: percussao;
+}
+
+.Botao__cordas{
+    grid-area: cordas;
+}
+
+@media (max-width: 1150px){
+    .Conteudo__principal--botoes{
+        grid-template-columns: repeat(6, 8rem);
+        grid-template-rows: repeat(2, 8rem);
+    }
+}
+
+@media (max-width: 850px){
+    .Conteudo__principal--botoes{
+        grid-template-columns: repeat(5, 7rem);
+        grid-template-rows: repeat(3, 6rem);
+        grid-template-areas: "bateria bateria teclado violao baixo" 
+                             "bateria bateria percussao canto audio"
+                             "bateria bateria teoria sopro cordas";
+    }
+
+    .Botao__tecladoPiano, .Botao__violaoGuitarra{
+        font-size: .7rem;
+    }
+
+    .Principal__Botão > img{
+        height: 3rem;
+        width: 4rem;
+        padding: .5rem;
+    }
+
+    .Botao__bateria > img{
+        width: 6rem;
+        height: 6rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 655px){
+    .Conteudo__principal--botoes{
+        grid-template-columns: repeat(2, 10rem);
+        grid-template-rows: repeat(5, 5rem);
+        grid-template-areas: "teclado violao" 
+                             "baixo bateria" 
+                             "percussao canto" 
+                             "audio teoria" 
+                             "sopro cordas";
+        margin: 1rem auto;
+    }
+
+    .Principal__Botão > img{
+        width: 2.7rem;
+        padding: .5rem;
+    }
+
+    .Principal__Botão{
+        font-size: .5rem;
+    }
+
+    .Conteudo__titulo--principal, .Conteudo__textos--principal{
+        display: inline;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .Conteudo__principal--matricular{
+        display: inline;
+        background-color: greenyellow;
+        padding: 1rem 3.6rem;
+        border-radius: .5rem;
+        text-align: center;
+        margin: .75rem auto;
+    }
+}
+
+@media (max-width: 350px){
+    .Conteudo__principal--botoes{
+        grid-template-columns: repeat(2, 6rem);
+        grid-template-rows: repeat(2, 4rem);
+    }
+
+    .Principal__Botão > img{
+        width: 2rem;
+        height: 1.5rem;
+        padding: .5rem;
+    }
+}

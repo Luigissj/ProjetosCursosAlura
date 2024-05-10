@@ -1,0 +1,52 @@
+.Conjunto__video{
+    width: 100%;
+}
+
+.Video{
+    width: 100%;
+    height: 30rem;
+}
+
+.Conjunto__video--titulo{
+    color: greenyellow;
+    text-transform: none;
+    font-size: 2rem;
+}
+
+.Conjunto__video--textos{
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1440px){
+    .Video{
+        width: 100%;
+        height: 20rem;
+    }    
+}
+
+@media (max-width: 1000px){
+    .Video{
+        width: 100%;
+        height: 9rem;
+    }    
+}
+
+@media (max-width: 400px){ 
+    .Conteudo__Video--titulo-destaque{
+        color: aqua;
+    }        
+}
+
+/*
+<section class="Conjunto__video">
+    <video class="Video" src="video/video-promocional.mp4" poster="conteúdo/video-principal.png"></video>
+    <div class="Conjunto__video--tituloTextos">
+        <h1 class="Conteudo__titulo Conjunto__video--titulo">Estude com os melhores professores</h1>
+        <p class="Conteudo__textos Conjunto__video--textos">Aprenda no seu ritmo sem sair de casa</p>
+    </div>
+</section>
+
+*/

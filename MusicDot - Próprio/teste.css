@@ -1,0 +1,107 @@
+html{
+    font-size: 15px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    transition: background-color .3s;
+}
+
+.Conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+#CorPrincipal{
+    margin-top: 1rem;
+    width: 80%;
+    height: 3rem;
+}
+
+.textoCor{
+    font-size: 2rem;
+}
+
+.areaDosTextArea{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10rem 2rem;
+    grid-template-areas: "textoMouse textoTriste textoNeutro"
+                         "botaoMouse botaoTriste none";
+    gap: 1rem;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+.textoArea{
+    width: 100%;
+}
+
+#textoMouseMexer{
+    grid-area: textoMouse;
+}
+
+#botaoMouseMexer{
+    width: 10rem;
+    grid-area: botaoMouse;
+}
+
+#textoTriste{
+    grid-area: textoTriste;
+}
+
+#botaoTriste{
+    grid-area: botaoTriste;
+    width: 10rem;
+}
+
+#naoMeFoque{
+    background-color: aquamarine;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#naoMeMude{
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+}
+
+#imagemCarregar{
+    margin: 1rem auto;
+    width: 20rem;
+    height: 12rem;
+}
+
+#enviarFormulario{
+    margin-bottom: 1rem;
+    width: 6rem;
+    height: 2rem;
+}
+
+/*
+    <div class="Conteudo">
+        <input type="color" name="Cor" id="CorPrincipal" value="#000000" oninput="mudarCorFundo(this)">
+        <P class="Caixa_content" onclick="mudarTextoClique()" ondblclick="mudarTextoDoisClique()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat harum neque excepturi veniam rerum officiis laudantium maxime aspernatur necessitatibus. Magni excepturi voluptatum iste aliquam facilis similique fugit quisquam omnis.</p>
+        <div class="areaDosTextArea">
+            <div class="conteudoMouseMexer">
+                <textarea name="texto" id="textoMouseMexer" cols="30" rows="10" placeholder="Mexe o mouse aqui" readonly onmousemove="mudarCorFundoTexto(this.id ,'#0000ff')"></textarea>
+                <input type="button" value="Preto" onmousedown="mudarCorFundo(this, '#000000')" onmouseup="mudarCorFundo(this, '#ffffff')">
+            <div class="conteudoBotaoTriste">
+                <textarea name="" id="textoTriste" cols="30" rows="10" readonly>Por favor, clique no botão abaixo, ele está muito triste😥😥😥</textarea>
+                <button id="botaoTriste" onkeypress="aparecerMensagem('Obrigado por me clicar'), trocarMensagem('#textoTriste', 'Obrigado por clicar nele, parece estar muito melhor!'), trocarMensagem(this.id, '🙂')">😓</button>
+            <textarea name="" id="textoCorNeutra" cols="30" rows="10" readonly onkeydown="mudarCorFundoTexto(this, '#ffffff'), trocarMensagem(this.id, 'Agora, large o botão para me deixar mais claro')" onkeyup="mudarCorFundoTexto(this.id, '#000000'), trocarMensagem(this.id, 'Pressione o botão C para poder me tornar escuro')">Pressione o botão 'C' para poder me tornar escuro</textarea>
+        </div>
+        <p id="naoMeFoque" onfocus="mudarCorFundo(this, '#ff0000')" onblur="mudarCorFundo()">Se me focar, meu pai body ficará com raiva! 😡😡😡</p>
+        <input type="email" name="" id="naoMeMude" value="Não me mude" onchange="mudarCorFundo('#00ff00')">
+        <img id="imagemCarregar" src="Yippie.jpg" alt="" onload="aparecerMensagem('yippie')" onunload="trocarImagem(this), aparecerMensagem('holla molla')">
+        <input type="submit" value="mandar" onsubmit="aparecerMensagem('Formulário enviado com sucesso')">
+    </div>
+*/

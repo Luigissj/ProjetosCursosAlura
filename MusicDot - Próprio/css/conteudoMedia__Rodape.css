@@ -1,0 +1,138 @@
+.Rodape{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.4rem;
+}
+
+.Conteudo__logo{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Conteudo__logotipo{
+    margin: 1rem auto;
+}
+
+.Conteudo__textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Conteudo__textos--principal{
+    font-size: 1.5rem;
+    color: white;  
+}
+
+.Conteudo__logo--sociais{
+    margin: 1rem 0;
+}
+
+.Botao__redesSociais{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.Conteudo__titulo{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 750;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.Conteudo__titulo--principal{
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-align: start;
+}
+
+.Conteudo__geral--estilo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 320px){
+    .Rodape{
+        line-height: 1rem;
+        font-size: .75rem;
+    }
+
+    .Conteudo__logotipo{
+        width: 7rem;
+    }
+
+    .Botao__redesSociais{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .Conteudo__titulo{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 640px){
+    .Rodape__secao + .Rodape__secao{
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 640px){
+    
+    .Rodape{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "logo curso"
+                    "maisSobre newsletter";
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-items: center;
+
+    }
+
+    .Conteudo__logo,
+    .Conteudo__cursos,
+    .Conteudo__maisSobre,
+    .Conjunto__newsletter{
+        margin: 0;
+        width: 45%;
+    }
+
+    .Conteudo__logo{
+        grid-area: "logo";
+    }
+    
+    .Conteudo__cursos{
+        grid-area: "curso";
+    }
+
+    .Conteudo__maisSobre{
+        margin-top: 2rem;
+        grid-area: "maisSobre";
+    }
+
+    .Conjunto__newsletter{
+        grid-area: "newsletter";
+    }
+}
+
+@media (min-width: 1600px){
+    .Rodape{
+        grid-template-columns: .5fr .5fr .5fr .5fr;
+        grid-template-rows: none;
+    }
+}
+
+@media (max-width: 655px){
+    .Conteudo__titulo--principal, .Conteudo__textos--principal{
+        font-size: 1rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/matricula.css">
+    <link rel="icon" href="conteúdo/favicon.ico">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img class="header-navbar-logo" src="conteúdo/musicdot-logo-light.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        Cursos
+                    </li>
+                    <li class="nav-item">
+                        Matrículas
+                    </li>
+                    <li class="nav-item">
+                        Email
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mb-4 bg-dark">
+        <div class="jumbotron text-light mt-3">
+            <div class="container">
+                <h1>Opção de Cursos</h1>
+                <p class="lead">Escolha um curso para matricular-se</p>
+            </div>
+        </div>
+        <div>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">
+
+                        </th>
+                        <th scope="col">
+                            Cursos
+                        </th>
+                        <th scope="col">
+                            Tempo
+                        </th>
+                    </tr>
+                </thead class="thead-dark">
+                <tbody>
+                    <tr>
+                        <td><input class="curso__botaoMatricula" type="checkbox" name="curso" value="20" onclick="adicionarMatricula(this)"></td>
+                        <td>Curso de Java</td>
+                        <td>20 Horas de curso</td>
+                    </tr>
+                    <tr>
+                        <td><input class="curso__botaoMatricula" type="checkbox" name="curso" value="12" onclick="adicionarMatricula(this)"></td>
+                        <td>Curso de Python</td>
+                        <td>12 Horas de curso</td>
+                    </tr>
+                    <tr>
+                        <td><input class="curso__botaoMatricula" type="checkbox" name="curso" value="30" onclick="adicionarMatricula(this)"></td>
+                        <td>Curso de Javascript</td>
+                        <td>30 Horas de curso</td>
+                    </tr>
+                    <tr>
+                        <td><input class="curso__botaoMatricula" type="checkbox" name="curso" value="10" onclick="adicionarMatricula(this)"></td>
+                        <td>Curso de Angular</td>
+                        <td>10 Horas de curso</td>
+                    </tr>
+                    <tr>
+                        <td><input class="curso__botaoMatricula" type="checkbox" name="curso" value="20" onclick="adicionarMatricula(this)"></td>
+                        <td>Curso de HTML5</td>
+                        <td>20 Horas de curso</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td class="js-total-de-cursos">0 h</td>
+                        <td class="js-total-de-horas">0 curso(s)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="botao__Matricula botao btn btn-outline-dark btn-lg mb-4" onclick="confirmarMatriculas()">Matricular</button>
+        </div>
+    </main>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/matricula.js"></script>
+</body>
+</html>

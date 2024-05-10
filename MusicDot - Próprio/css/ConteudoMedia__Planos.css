@@ -1,0 +1,165 @@
+.Conjunto__planos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-image: url('../conteúdo/planos-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Conteudo__planos--titulo{
+    padding-top: 1rem;
+    width: 80%;
+    text-align: center;
+    border-top: 3px solid rgb(231, 38, 38);
+}
+
+.titulo__destaque{
+    font-weight: bold;
+}
+
+.Conjunto__planos--posicao{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 0;
+}
+
+.Plano{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    height: 20rem;
+    border-radius: 10px;
+    background-color: rgb(231, 67, 67);
+    box-shadow: 0px -1px 15px rgb(56, 56, 56);
+    line-height: 1.2rem;
+    color: white;
+    word-spacing: .2rem;
+}
+
+.Plano__semestre{
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+.Planos__titulo{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.Planos__valor{
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+.Planos__valor > span{
+    font-size: 2.2rem;
+}
+
+.Planos__valorTotal{
+    letter-spacing: .05rem;
+    margin-bottom: .5rem;
+}
+
+.Planos__beneficioExtra{
+    margin-bottom: .5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.Planos__matricular{
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    color: rgb(231, 67, 67);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+
+.Plano__comTituloDestaque{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 20rem;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+.Planos__titulo--destaque{
+    position: relative;
+    transform: translateY(-90%);
+    padding: .5rem .8rem;
+    background-color: greenyellow;
+    border-radius: 10%;
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.Plano__anual{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.Planos__imagem{
+    margin: 1.5rem auto;
+}
+
+.texto__informacoesExtras{
+    font-size: 1.2rem;
+}
+
+.Planos__textoExtras{
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 700px){
+    .Conjunto__planos--posicao{
+        flex-direction: column-reverse;
+    }
+
+    .Plano__semestre, .Plano__comTituloDestaque{
+        margin: 1rem auto;
+    }
+    
+    .Conjunto__planos--posicao{
+        margin: 2rem auto;
+    }
+}
+
+/*
+<section class="Conjunto__planos">
+    <h2 class="Conteudo__titulo--planos"><strong>Acesso limitado a todos os cursos</strong></h2>
+    <Conjunto__planos--posicao>
+        <div class="Plano__semestre">
+            <img class="Planos__imagem" src="conteúdo/simbolo-musidot-dark.svg" alt="">
+            <h3 class="Planos__titulo">Plano Semestral</h3>
+            <p class="Planos__valor">12x de <span>R$60,00</span></p>
+            <small class="Planos__valorTotal">Valor total de R$360,00</small>
+            <p class="Planos__matricular">Matricule-se</p>
+        </div>
+        <div class="Plano__anual">
+            <p class="Planos__titulo--destaque">+ Assinado</p>
+            <img class="Planos__imagem" src="conteúdo/simbolo-musidot-branco.svg" alt="">
+            <h3 class="Planos__titulo">Plano Anual</h3>
+            <p class="Planos__valor">12x de <span>R$50,00</span></p>
+            <small class="Planos__valorTotal">Valor total de R$600,00</small>
+            <p class="Planos__beneficioExtra">Acesso a Alura Lingua</p>
+            <p class="Planos__matricular">Matricule-se</p>
+        </div>
+    </Conjunto__planos--posicao>
+    <p>Pagamento seguro com PayPal <br></p>
+    <p>Oferecemos boleto á vista, <strong>basta entrar em contato</strong></p>
+</section>
+*/

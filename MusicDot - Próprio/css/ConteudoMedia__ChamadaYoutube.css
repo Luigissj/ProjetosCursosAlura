@@ -1,0 +1,118 @@
+.Conjunto__chamadaYoutube{
+    background-color: white;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(2, 16rem);
+    grid-template-areas: "canal canal canal canal canal canal canal canal"
+                         "none canto canto non no toque toque n";
+    text-align: center;
+    border-bottom: 10px solid rgba(0, 0, 0, 25%);
+    padding: 3rem 0;
+}
+
+.ChamadaYoutube__canal{
+    margin: 1rem auto;  
+    grid-area: canal;
+}
+
+.ChamadaYoutube__video1{
+    grid-area: canto;
+    border: 5px dotted red;
+}
+
+.ChamadaYoutube__video2{
+    grid-area: toque;
+    border: 5px dotted blue;
+}
+
+.Canal__titulo, .Descricao__titulo{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.Canal__titulo{
+    color: white;
+    display: inline;
+    background-color: red;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.Descricao__texto, .Canal__texto{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 auto 2.5rem auto;
+}
+
+.Canal__texto{
+    margin-top: 1rem;
+}
+
+.Canal__button{
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    background-color:springgreen;
+}
+
+.Video1, .Video2{
+    width: 10rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1250px){
+    .Video1, .Video2{
+        width: 7rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 950px){
+    .Descricao__titulo{
+        font-size: 1rem;
+    }
+
+    .Descricao__texto{
+        font-size: .75rem;
+    }
+}
+
+@media (max-width: 650px){
+    .Descricao__titulo{
+        font-size: .75rem;
+    }
+
+    .Descricao__texto{
+        font-size: .5rem;
+    }
+
+    .Video1, .Video2{
+        width: 5rem;
+        height: 4rem;
+    }
+
+}
+
+/*
+<section class="Conjunto__chamadaYoutube">
+            <article class="ChamadaYoutube__canal">
+                <h2 class="Canal__titulo">Nosso canal no YouTube</h2>
+                <p class="Canal__texto">Cursos online de Teclado, Piano, Canto, Violão, Guitarra, Teoria Musical e mais!</p>
+                <a href="https://www.youtube.com/user/musicdotonline" class="Canal__button">Ver Canal</a>
+            </article>
+            <article class="ChamadaYoutube__video1">
+                <a class="Video1__descricao" href="#">
+                    <h2 class="Descricao__titulo">Aula de Canto para Iniciantes (dicas básicas)</h2>
+                    <p class="Descricao__texto">Nessa aula a professora Anny Cee dá as primeiras dicas para você começar o seu estudo do Canto.</p>
+                </a>
+            </article>
+            <article class="chamada__youtube--video2">
+                <a class="Video2__descricao" href="#">
+                    <h2 class="Descricao__titulo">Toque teclado em 10 minutos! (Aula de teclado para iniciantes)</h2>
+                    <p class="Descricao__texto">Essa é a primeira aula do curso de teclado da MusicDot. Aqui você aprenderá a nomear todas...</p>
+                </a>
+            </article>
+        </section>
+*/
